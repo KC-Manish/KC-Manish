@@ -1,0 +1,47 @@
+Absolutely, Kc! Here's a **complete UVM learning roadmap** — beginner to advanced — with **step-by-step structure**, **resources**, and **links** to guides, books, and exercises.
+
+---
+
+# 📘 UVM Learning Roadmap (Beginner to Advanced)
+
+| Week            | Topic                                         | Description                                                                                                      | Practice & Resources                                                                                                                                                                                                                                                                                  |
+| --------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ✅ **Week 1**    | 🔹 **UVM Basics & Motivation**                | Understand why UVM exists, what problem it solves                                                                | - [ASIC World Intro to UVM](https://www.asic-world.com/systemverilog/uvm.html)<br> - Read [UVM User Guide 1.2 (PDF)](https://accellera.org/images/downloads/standards/uvm/uvm_users_guide_1.2.pdf), Ch.1–3<br> - Watch [UVM Introduction (Doulos Video)](https://www.youtube.com/watch?v=JLH8F6weFSc) |
+| ✅ **Week 2**    | 🔹 **UVM Testbench Structure**                | Learn about `uvm_component`, `uvm_env`, `uvm_agent`, `uvm_driver`, `uvm_monitor`, `uvm_sequence`, and `uvm_test` | - [UVM Cookbook by Doulos](https://www.doulos.com/knowhow/systemverilog/uvm/uvm-cookbook/) (Sections 1–3)<br> - Hands-on: Create a “Hello UVM” TB printing messages from components                                                                                                                   |
+| ✅ **Week 3**    | 🔹 **Factory, Config DB, Phases**             | Learn about `uvm_config_db`, factory registration, build/run/report phases                                       | - Read UVM User Guide Ch.4–5<br> - [EDA Playground Example: ConfigDB](https://www.edaplayground.com/x/5GPC)<br> - Practice using config settings in your TB                                                                                                                                           |
+| ✅ **Week 4**    | 🔹 **UVM Sequences & Drivers**                | Build sequences to send stimulus, understand sequencer-driver connection                                         | - [UVM Cookbook: Sequences](https://www.doulos.com/knowhow/systemverilog/uvm/uvm-cookbook/sequences/)<br> - Code: Make counter\_tb with sequence → driver → DUT                                                                                                                                       |
+| ✅ **Week 5**    | 🔹 **Monitors, Scoreboards, Analysis Ports**  | Collect outputs, build reusable monitors & checkers                                                              | - UVM User Guide Ch.6<br> - [Scoreboard tutorial](https://surf-vhdl.com/uvm-scoreboard/)<br> - Build checker logic to compare expected/actual                                                                                                                                                         |
+| ✅ **Week 6**    | 🔹 **UVM Environment Reuse**                  | Build modular agents, reuse them across tests                                                                    | - [EDA Playground: Reusable Agent Example](https://www.edaplayground.com/x/4jhb)<br> - Create 2 UVM tests with different sequences                                                                                                                                                                    |
+| ✅ **Week 7**    | 🔹 **Functional Coverage in UVM**             | Add SystemVerilog covergroups & connect them to UVM                                                              | - [Doulos Functional Coverage](https://www.doulos.com/knowhow/systemverilog/functional-coverage/)<br> - [EDA Playground: Covergroups in UVM](https://www.edaplayground.com/x/3Vde)                                                                                                                    |
+| ✅ **Week 8**    | 🔹 **Advanced: Virtual Sequences, Callbacks** | Layered sequences, overriding behavior                                                                           | - UVM User Guide Ch. 7–9<br> - Practice virtual sequences controlling multiple agents                                                                                                                                                                                                                 |
+| ✅ **Week 9–10** | 🔹 **Assertions & Scoreboarding**             | Combine UVM with assertions (SystemVerilog `assert`)                                                             | - [SystemVerilog Assertions Basics](https://www.chipverify.com/systemverilog/systemverilog-assertions-basics)<br> - Add assertions to DUT and see if UVM reports failures                                                                                                                             |
+| ✅ **Week 11+**  | 🔹 **Real Projects / Labs**                   | Build complete testbenches for UART, SPI, etc.                                                                   | - [EDA Playground UART UVM](https://www.edaplayground.com/x/5MEW)<br> - [UVM Verification GitHub Repo](https://github.com/chiggs/uvm-examples)                                                                                                                                                        |
+
+---
+
+## 🛠 Tools for Practice
+
+| Tool                                  | Use                                        | Link                                                               |
+| ------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------ |
+| ✅ EDA Playground                      | Browser-based SystemVerilog/UVM simulation | [https://www.edaplayground.com](https://www.edaplayground.com)     |
+| ✅ ModelSim Student Edition            | Local UVM simulation (Windows)             | [Download](https://eda.sw.siemens.com/en-US/ic/modelsim/)          |
+| 🧰 Vivado Simulator (if using Xilinx) | Basic UVM support                          | [Vivado](https://www.xilinx.com/products/design-tools/vivado.html) |
+| ✅ GTKWave                             | View waveforms                             | Already installed by you                                           |
+
+---
+
+## 📚 Optional Free Books
+
+* 📘 [UVM 1.2 User Guide (PDF)](https://accellera.org/images/downloads/standards/uvm/uvm_users_guide_1.2.pdf)
+* 📘 [UVM Cookbook by Doulos (PDF)](https://community.cadence.com/cfs-file/__key/communityserver-wikis-components-files/00-00-00-00-69/UVM_5F00_Cookbook.pdf)
+
+---
+
+Would you like me to:
+
+* Provide a **starter UVM project** that runs on ModelSim or EDA Playground?
+* Help install ModelSim Student Edition and set up your first testbench?
+* Explain UVM phases or config\_db in more detail next?
+
+Let’s take it week by week if you want!
+
