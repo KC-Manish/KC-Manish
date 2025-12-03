@@ -1,0 +1,15 @@
+TOP = fifo
+
+all: sim
+
+sim: $(TOP).v tb_$(TOP).cpp
+	verilator -Wall --trace -cc $(TOP).v --exe tb_$(TOP).cpp
+	make -C obj_dir -j -f V$(TOP).mk V$(TOP)
+	./obj_dir/V$(TOP)
+
+wave:
+	gtkwave sim.vcd
+
+clean:
+	rm -rf obj_dir sim.vcd
+
